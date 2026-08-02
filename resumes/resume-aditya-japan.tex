@@ -3,10 +3,10 @@
 %  Compile on Overleaf with pdfLaTeX. 1-2 pages allowed in Japan.
 %  Use for: Mercari, Rakuten, Sony, LY Corp, Google Japan, HENNGE, Woven.
 %  =====================================================================
-\documentclass[11pt, letterpaper]{article}
+\documentclass[9pt, letterpaper]{article}
 
 \usepackage[T1]{fontenc}
-\usepackage[margin=0.6in]{geometry}
+\usepackage[margin=0.45in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{xcolor}
@@ -15,30 +15,31 @@
 
 \definecolor{accent}{HTML}{2F343B}
 
-\newcommand{\name}[1]{{\Huge\bfseries\color{accent}#1}\\[4pt]}
-\newcommand{\contact}[1]{{\small#1}\\[6pt]}
+\newcommand{\name}[1]{{\LARGE\bfseries\color{accent}#1}\\[2pt]}
+\newcommand{\contact}[1]{{\footnotesize#1}\\[4pt]}
 
 \titleformat{\section}
-  {\large\bfseries\color{accent}}
+  {\normalsize\bfseries\color{accent}}
   {}{0pt}{}[\vspace{-2pt}\titlerule]
-\titlespacing*{\section}{0pt}{10pt}{6pt}
+\titlespacing*{\section}{0pt}{5pt}{2pt}
 
 \setlist[itemize]{
-  leftmargin=1.1em,
-  itemsep=2pt,
-  topsep=3pt,
+  leftmargin=1em,
+  itemsep=0.5pt,
+  topsep=2pt,
   parsep=0pt,
   label=\textbullet
 }
 
 \newcommand{\skillline}[1]{\par\noindent {\bfseries #1}}
 
+\setlength{\parskip}{0pt}
+
 \begin{document}
 
 \begin{center}
   \name{Aditya Shirsatrao}
-  \contact{Solapur, Maharashtra, India -- willing to relocate to Japan for internship $\cdot$%
-           adityashirsatrao007@gmail.com $\cdot$ +91-7387-384655 $\cdot$%
+  \contact{adityashirsatrao007@gmail.com $\cdot$ +91-7387-384655 $\cdot$%
            \href{https://github.com/adityashirsatrao007}{github.com/adityashirsatrao007} $\cdot$%
            \href{https://www.linkedin.com/in/adityashirsatrao}{linkedin.com/in/adityashirsatrao}}
 \end{center}
@@ -46,16 +47,14 @@
 % ---------------------------------------------------------------------
 \section{Professional Summary}
 \noindent
-B.Tech Artificial Intelligence and Data Science undergraduate (CGPA 8.5/10) with 6+ production-grade full-stack projects, 366+ solved LeetCode problems, and hands-on experience building scalable backend and ML systems. Currently studying Japanese (JLPT N5, preparing for N4) with strong interest in the Japanese tech ecosystem. Seeking a Software Engineering / Backend / AI internship in Japan to contribute to high-scale, product-focused development.
+B.Tech Artificial Intelligence and Data Science undergraduate (CGPA 8.5/10) with 6+ production-grade full-stack projects and 366+ solved LeetCode problems. JLPT N5 (preparing for N4). Willing to relocate to Japan for an internship; eligible for the Designated Activities visa.
 
 % ---------------------------------------------------------------------
 \section{Technical Skills}
-\skillline{Languages:} Python, Java, C++, JavaScript (ES6+), TypeScript, SQL\\
-\skillline{Backend:} FastAPI, Node.js, Express.js, REST APIs, WebSockets, Redis, Kafka, Celery, Message Queues\\
+\skillline{Languages:} Python, Java, C++, JavaScript/TypeScript, SQL\\
+\skillline{Backend \& DevOps:} FastAPI, Node.js, Express.js, REST, WebSockets, Redis, Kafka, Celery, Docker, Kubernetes, GitHub Actions, AWS (EC2/S3/Lambda)\\
 \skillline{Frontend:} React.js, Next.js, HTML5, CSS3, Tailwind CSS\\
-\skillline{AI/ML:} PyTorch, TensorFlow, HuggingFace Transformers, scikit-learn, OpenCV, RAG, LangChain, LLMs\\
-\skillline{Databases:} PostgreSQL, MySQL, MongoDB, ChromaDB\\
-\skillline{DevOps:} Docker, Kubernetes, GitHub Actions CI/CD, AWS (EC2/S3/Lambda), Linux\\
+\skillline{AI/ML \& Data:} PyTorch, TensorFlow, HuggingFace, scikit-learn, OpenCV, RAG, LangChain, PostgreSQL, MySQL, MongoDB, ChromaDB\\
 \skillline{Concepts:} DSA, OOP, System Design, Microservices, Distributed Systems
 
 % ---------------------------------------------------------------------
@@ -64,22 +63,21 @@ B.Tech Artificial Intelligence and Data Science undergraduate (CGPA 8.5/10) with
 \textbf{SentinelX -- AI Cybersecurity Platform} \hfill \small{\href{https://github.com/adityashirsatrao007/ai-threat-detection}{GitHub}} \normalsize\\
 \textit{FastAPI, HuggingFace Transformers, Whisper, Celery, Redis, PostgreSQL} \hfill May 2026
 \begin{itemize}
-  \item Built a production-grade multi-channel threat-detection backend (email/SMS/voice) using a multi-model ML pipeline: DistilBERT for NLP classification, OpenAI Whisper for speech-to-text, and LLM enrichment
-  \item Engineered a weighted 4-component risk-scoring engine with async Celery + Redis task queues; won \textbf{1st Place} at Hack to Future 3.0 (600+ teams, INR 50,000 prize)
+  \item Production-grade multi-channel threat detection (email/SMS/voice): DistilBERT NLP + Whisper speech-to-text + LLM enrichment; weighted risk-scoring with Celery + Redis
+  \item \textbf{1st Place}, Hack to Future 3.0 (600+ teams, INR 50,000 prize)
 \end{itemize}
 
 \textbf{Tracelify -- Cross-Platform Error Tracking \& Observability} \hfill \small{\href{https://github.com/adityashirsatrao007/error-tracking-observability-sdk}{GitHub}} \normalsize\\
 \textit{Python, FastAPI, React, AWS Bedrock, PostgreSQL} \hfill Apr 2026
 \begin{itemize}
-  \item Designed and published a multi-language error-tracking SDK (PyPI: tracelify-sdk v1.0.0) with native support for Python, Java, Kotlin, Go, C++, JavaScript
-  \item Built a FastAPI backend with multi-tenant RBAC, Redis caching, and LLM-powered automated error reports; \textbf{1st Runner-Up} at Orchathon 2K26 (800+ teams)
+  \item Multi-language error-tracking SDK (PyPI: tracelify-sdk v1.0.0) for Python, Java, Kotlin, Go, C++, JavaScript; FastAPI backend with multi-tenant RBAC and LLM error reports
+  \item \textbf{1st Runner-Up}, Orchathon 2K26 (800+ teams)
 \end{itemize}
 
 \textbf{RAG Knowledge Assistant} \hfill \small{\href{https://github.com/adityashirsatrao007/rag-knowledge-assistant}{GitHub}} \normalsize\\
 \textit{FastAPI, Chroma, sentence-transformers, BM25, Docker} \hfill Jun 2026
 \begin{itemize}
-  \item Built an LLM Q\&A system over 500+ documents with hybrid retrieval (vector + BM25) and source citations; \textbf{92\% retrieval hit-rate} on a 50-question eval set
-  \item Runs fully offline (TF-hashing embedder + local LLM fallback) so the demo works with zero API keys or downloads
+  \item LLM Q\&A over 500+ documents with hybrid retrieval (vector + BM25) and citations; \textbf{92\% hit-rate}; runs fully offline (zero API keys)
 \end{itemize}
 
 \textbf{Nyaya AI -- Legal Document Processing} \hfill \small{\href{https://github.com/adityashirsatrao007/fir-digitization-legal-ai}{GitHub}} \normalsize\\
@@ -94,46 +92,38 @@ B.Tech Artificial Intelligence and Data Science undergraduate (CGPA 8.5/10) with
 \textbf{Fullstack Web Development Intern} \hfill \textbf{Unified Mentor Pvt. Ltd}\\
 Jul 2025 -- Jan 2026 \hfill Remote
 \begin{itemize}
-  \item Architected an AI-powered code review platform with Kafka queues and Redis caching, reducing analysis latency by \textbf{45\%}
-  \item Engineered a real-time collaborative IDE (WebSockets, Socket.IO, CRDT) with sub-100ms synchronization for concurrent users
-  \item Built a distributed ML inference platform with autoscaling endpoints and monitoring, improving throughput by \textbf{60\%}
+  \item Architected an AI-powered code review platform with Kafka queues and Redis caching, cutting latency by \textbf{45\%}
+  \item Built a real-time collaborative IDE (WebSockets, CRDT) with sub-100ms sync for concurrent users
+  \item Built a distributed ML inference platform with autoscaling endpoints, improving throughput by \textbf{60\%}
 \end{itemize}
 
 \textbf{AI/ML Lead} \hfill \textbf{Google Developer Groups on Campus (GDG-NKOCET)}\\
 Sep 2025 -- Present \hfill Solapur, India
 \begin{itemize}
-  \item Lead AI/ML workshops and mentorship for a \textbf{200+ student} community
+  \item Lead AI/ML workshops and mentorship for \textbf{200+ students}
 \end{itemize}
 
 % ---------------------------------------------------------------------
 \section{Education}
-\textbf{B.Tech in Artificial Intelligence and Data Science} \hfill \textbf{N. K. Orchid College of Engineering \& Technology}\\
+\textbf{B.Tech in AI \& Data Science} \hfill \textbf{N. K. Orchid College of Engineering \& Technology}\\
 Expected Graduation: 2027 \hfill CGPA: 8.5/10
 \begin{itemize}
-  \item Relevant coursework: Data Structures \& Algorithms, Databases, Operating Systems, Distributed Systems, Machine Learning, Neural Networks, OOP
+  \item Coursework: DSA, Databases, OS, Distributed Systems, ML, Neural Networks, OOP
 \end{itemize}
 
 % ---------------------------------------------------------------------
 \section{Languages}
 \begin{itemize}
-  \item \textbf{Japanese:} JLPT N5 (currently preparing for N4)
-  \item \textbf{English:} Professional working proficiency
-  \item \textbf{Hindi / Marathi:} Native
+  \item \textbf{Japanese:} JLPT N5 (preparing for N4) $\cdot$ \textbf{English:} Professional working proficiency $\cdot$ \textbf{Hindi/Marathi:} Native
 \end{itemize}
 
 % ---------------------------------------------------------------------
 \section{Achievements \& Certifications}
 \begin{itemize}
-  \item IEEE First-Author Publication presented at ICCTWC 2026; 3 national hackathon wins (600--800+ teams)
-  \item 50+ open source PRs merged across Google (OSS-Fuzz), Microsoft (VibeVoice), Apache (DataFusion), Hedera Hashgraph (Hiero SDK)
-  \item NPTEL Programming in Java (Elite+Gold, 91/100); JPMorgan Chase \& Electronic Arts SWE Virtual Experience; Kaggle AI Agents Intensive Course
+  \item IEEE First-Author Publication (ICCTWC 2026); 3 national hackathon wins (600--800+ teams)
+  \item 50+ open source PRs merged (Google OSS-Fuzz, Microsoft VibeVoice, Apache DataFusion, Hedera Hiero SDK)
+  \item NPTEL Java (Elite+Gold, 91/100); JPMorgan \& EA SWE Virtual Experience
 \end{itemize}
 
 % ---------------------------------------------------------------------
-\section{Relocation / Visa}
-\begin{itemize}
-  \item Willing to relocate to Tokyo / anywhere in Japan for an internship
-  \item Eligible for a Designated Activities (internship) visa; committed to reaching JLPT N3+ while working
-\end{itemize}
-
 \end{document}
