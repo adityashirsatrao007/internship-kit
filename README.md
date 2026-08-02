@@ -44,6 +44,7 @@ internship-kit/
 ├── interview-prep/
     ├── interview-prep-pack.md   ← ⭐ 6-week DSA sprint + 6 STAR stories + question bank
     └── quant-brainteaser-prep.md← Goldman/JPM quant, probability, brainteasers
+└── deployment-guide.md        ← how to take repos live (Render/Vercel, one-click)
 └── application-tracker/
     ├── applications.csv         ← log every application (company, role, status, next action)
     └── tracker.py               ← CLI: add / list / due / summary (python3 tracker.py --help)
@@ -146,4 +147,5 @@ All resumes and cover letters exist as `.tex` files ready to compile on **Overle
 2. Read `checklists/company-by-company.md` for the target company's exact requirements.
 3. Read `github-projects/projects-to-build.md` and pick ONE project to start today.
 4. When applications go live: log each one in `application-tracker/` (`python3 tracker.py add ...`).
-5. Before interviews: work through `interview-prep/interview-prep-pack.md` (DSA + STAR) and, for Goldman/JPM, `interview-prep/quant-brainteaser-prep.md`.
+5. When ready to go live: read `deployment-guide.md`.
+6. Before interviews: work through `interview-prep/interview-prep-pack.md` (DSA + STAR) and, for Goldman/JPM, `interview-prep/quant-brainteaser-prep.md`.
