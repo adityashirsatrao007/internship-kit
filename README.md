@@ -39,7 +39,14 @@ internship-kit/
 │   └── linkedin-japan-guide.md  ← LinkedIn polish + Japanese employer expectations
 └── checklists/
     ├── application-checklist.md ← master checklist for every application
-    └── company-by-company.md    ← what each company specifically requires
+    ├── company-by-company.md    ← what each company specifically requires
+    └── worldwide-companies.md   ← top tech companies by region (US/EU/JP/IN/CN/fintech)
+├── interview-prep/
+    ├── interview-prep-pack.md   ← ⭐ 6-week DSA sprint + 6 STAR stories + question bank
+    └── quant-brainteaser-prep.md← Goldman/JPM quant, probability, brainteasers
+└── application-tracker/
+    ├── applications.csv         ← log every application (company, role, status, next action)
+    └── tracker.py               ← CLI: add / list / due / summary (python3 tracker.py --help)
 ```
 
 ## The 3 golden rules (from all the research)
@@ -138,3 +145,5 @@ All resumes and cover letters exist as `.tex` files ready to compile on **Overle
 1. Read `resumes/resume-en-ats.md` and fill in your details.
 2. Read `checklists/company-by-company.md` for the target company's exact requirements.
 3. Read `github-projects/projects-to-build.md` and pick ONE project to start today.
+4. When applications go live: log each one in `application-tracker/` (`python3 tracker.py add ...`).
+5. Before interviews: work through `interview-prep/interview-prep-pack.md` (DSA + STAR) and, for Goldman/JPM, `interview-prep/quant-brainteaser-prep.md`.

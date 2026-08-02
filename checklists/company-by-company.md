@@ -69,6 +69,8 @@ Everything below is verified against company career pages and posting details fo
 
 ## FAANG / US (paid internships)
 
+> Broad worldwide company directory (EU/India/China/fintech included): see `worldwide-companies.md`.
+
 | Program | For | Pay | Apply window | Notes |
 |---|---|---|---|---|
 | **Microsoft Explore** | Freshmen + sophomores | ~$7,000–8,500/mo | Aug–Dec (apply before Nov) | 12 wks, 3 rotations; easiest FAANG entry |
@@ -81,6 +83,51 @@ Everything below is verified against company career pages and posting details fo
 | **Amazon SDE Intern** | Upperclassmen | ~$25–29k/10–12wks | opens ~Jul | Must have 1 term left after |
 | **Goldman Sachs Summer Analyst** | ⚠️ penultimate year only | ~$150–170k prorated | opens ~Jul, rolling | Apply at higher.gs.com; HackerRank + video interview; max 4 div/location combos |
 | **JPMorgan SWE Intern** | Upperclassmen | $46–60/hr | apply by ~Nov | HackerRank + HireVue |
+
+---
+
+## INDIA (SWE / ML / Data internships)
+
+### TCS (Tata Consultancy Services)
+- **What:** TCS NQT (National Qualifier Test) → campus + off-campus roles; no formal "internship" portal for all, uses NQT for new graduates
+- **Pay:** Interns ~₹15–25k/mo; new-grad offers ₹3.5–7 LPA typical
+- **Eligibility:** Final-year preferred; NQT score gates
+- **Documents:** Standard resume; GitHub/portfolio helps at interview
+- **Process:** NQT (aptitude + coding) → technical interview → HR
+- **Where:** nextstep.tcs.com (register for NQT)
+
+### Infosys
+- **What:** Infosys Springboard + off-campus via InfyTQ/Infosys Certification
+- **Pay:** ~₹3.5–6.5 LPA new grad
+- **Eligibility:** Final-year; InfyTQ certification improves odds
+- **Process:** InfyTQ → SP (System Programmer) / SE (System Engineer) tracks
+- **Where:** infosys.com careers; certification via certification.infosys.com
+
+### HCLTech / Wipro / Tech Mahindra / Cognizant
+- **Similar:** aptitude + coding (C/C++/Java/Python) + HR. Off-campus drives via their portals & job boards. Pay ₹3.5–5 LPA new grad. GitHub projects differentiate you in the technical round.
+
+### Product/startups (higher bar, higher pay)
+- **Zoho** — engineering roles; known for own-tools bias; apply via zoho.com/careers
+- **Freshworks** — SaaS; Chennai/Bangalore; strong for full-stack
+- **Razorpay** — fintech; SDE intern ~₹50–80k/mo; LeetCode-style
+- **Zomato/Swiggy** — consumer apps; system design for senior roles, DSA for interns
+- **PhonePe / CRED / BrowserStack** — fintech/dev-tools; DSA-heavy
+
+## CHINA (mostly mainland, Mandarin often required)
+
+### Tencent
+- **What:** Summer intern (暑期实习) — SDE, backend, AI
+- **Eligibility:** Usually needs Chinese-language ability; some AI labs in English
+- **Pay:** Competitive by Chinese standards (~¥200–400/day)
+- **Process:** Online assessment (DSA) → interviews
+- **Where:** join.qq.com
+
+### Alibaba / ByteDance (TikTok) / Huawei / Meituan / JD.com / Xiaomi
+- **Similar:** internship programs run on Chinese portals; Mandarin is the norm; English-track roles exist mainly at **TikTok (ByteDance)** global offices (Singapore, US) and **Alibaba International / Lazada**
+- **Note for non-Mandarin speakers:** prioritize ByteDance (Singapore/global), Alibaba International, and the India/Japan/US routes instead
+
+### Key number to remember
+- Chinese new-grad SWE: ~¥200–400k/yr at top firms (Beijing/Shenzhen); strong AI demand
 
 ---
 
