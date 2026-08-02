@@ -33,7 +33,8 @@ internship-kit/
 │   └── visa-checklist.md        ← Designated Activities (Internship) visa docs
 ├── github-projects/
 │   ├── projects-to-build.md     ← 6 hireable projects with tech stack + metrics
-│   └── github-polish.md         ← how to make GitHub pass the 60-second recruiter test
+│   ├── github-polish.md         ← how to make GitHub pass the 60-second recruiter test
+│   └── linkedin-japan-guide.md  ← LinkedIn polish + Japanese employer expectations
 └── checklists/
     ├── application-checklist.md ← master checklist for every application
     └── company-by-company.md    ← what each company specifically requires
