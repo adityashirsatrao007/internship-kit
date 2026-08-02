@@ -56,7 +56,7 @@ Based on the top-20 patterns interviewers actually use. ~2 problems/day, 45 min 
 
 Formula: **S**ituation (1-2 lines) → **T**ask (what you owned) → **A**ction (2-4 lines, "I" + verbs + specifics) → **R**esult (number/metric).
 
-### Story 1 — Teamwork / collaboration (use hackathon-project-1)
+### Story 1 — Teamwork / collaboration (use error-tracking-observability-sdk)
 - **S:** 24–48h hackathon, team of 3–4, building a multi-language error-tracking SDK.
 - **T:** Owned the Python/Kotlin agents + the shared schema the other teammates' languages used.
 - **A:** Defined the message contract first, wrote a stub, then each language agent implemented against it; I reviewed and merged, ran the integration tests.
@@ -74,7 +74,7 @@ Formula: **S**ituation (1-2 lines) → **T**ask (what you owned) → **A**ction 
 - **A:** Picked the stack (Chroma + FastAPI), built ingest→retrieve→answer pipeline, added an eval set so quality is measurable, documented for the team.
 - **R:** 92% retrieval hit-rate on eval set; reusable pattern the team can copy.
 
-### Story 4 — Failure / lesson learned (hackathon-project-2 or a project that broke)
+### Story 4 — Failure / lesson learned (fir-digitization-legal-ai or a project that broke)
 - **S:** A feature/API shipped but crashed at startup in a deployed-like environment (e.g., Redis unreachable).
 - **T:** Fix without blocking the whole app.
 - **A:** Added graceful degradation — app starts, features that need the dependency no-op with a clear log; added a test to prevent regression.

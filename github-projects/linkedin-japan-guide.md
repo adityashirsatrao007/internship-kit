@@ -118,7 +118,7 @@ Already good:
 - ✅ Honest, iterative commit history on hackathon projects
 
 Add:
-- [ ] Pin the 6 best repos (order-matching-engine, hackathon-project-1/2/3, rag-knowledge-assistant, nyc-taxi-data-pipeline)
+- [ ] Pin the 6 best repos (order-matching-engine, error-tracking-observability-sdk/2/3, rag-knowledge-assistant, nyc-taxi-data-pipeline)
 - [ ] Add topics/labels to every project (recruiters search by topic)
 - [ ] Add screenshots/GIFs to every README (visual proof beats prose)
 - [ ] Keep a steady commit cadence (GitHub activity graph is inspected in Japan)
