@@ -33,6 +33,7 @@ internship-kit/
 │   └── visa-checklist.md        ← Designated Activities (Internship) visa docs
 ├── github-projects/
 │   ├── projects-to-build.md     ← 6 hireable projects with tech stack + metrics
+│   ├── role-to-repos.md         ← ⭐ redirect map: role/company → which GitHub repos to share
 │   ├── github-polish.md         ← how to make GitHub pass the 60-second recruiter test
 │   └── linkedin-japan-guide.md  ← LinkedIn polish + Japanese employer expectations
 └── checklists/
@@ -77,6 +78,13 @@ All resumes and cover letters exist as `.tex` files ready to compile on **Overle
 | Traditional Japanese companies (HR asks for 履歴書) | `rirekisho-aditya.tex` (XeLaTeX) |
 
 **Layout guarantees built in:** `geometry` margins (0.6in), `titlesec` section spacing, `enumitem` compact bullets, `parskip` for clean spacing, `hidelinks` so URLs are invisible but clickable — all standard packages that never misalign or spill off the page.
+
+## GitHub repos by role
+
+> **Redirect map:** applying for a specific role or company? Open
+> [`github-projects/role-to-repos.md`](github-projects/role-to-repos.md) to see exactly
+> which of your GitHub repos to share with that application. Every linked repo is live,
+> public, CI-green, and resume-referenced.
 
 ## Quick timeline
 
