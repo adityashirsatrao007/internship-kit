@@ -32,8 +32,9 @@ internship-kit/
 ├── visa-documents/
 │   └── visa-checklist.md        ← Designated Activities (Internship) visa docs
 ├── github-projects/
+│   ├── master-hub.md            ← ⭐ MASTER HUB: companies × roles × repos × resumes (start here)
 │   ├── projects-to-build.md     ← 6 hireable projects with tech stack + metrics
-│   ├── role-to-repos.md         ← ⭐ redirect map: role/company → which GitHub repos to share
+│   ├── role-to-repos.md         ← redirect map: role/company → which GitHub repos to share
 │   ├── github-polish.md         ← how to make GitHub pass the 60-second recruiter test
 │   └── linkedin-japan-guide.md  ← LinkedIn polish + Japanese employer expectations
 └── checklists/
@@ -81,10 +82,9 @@ All resumes and cover letters exist as `.tex` files ready to compile on **Overle
 
 ## GitHub repos by role
 
-> **Redirect map:** applying for a specific role or company? Open
-> [`github-projects/role-to-repos.md`](github-projects/role-to-repos.md) to see exactly
-> which of your GitHub repos to share with that application. Every linked repo is live,
-> public, CI-green, and resume-referenced.
+> **Start here:** open [`github-projects/master-hub.md`](github-projects/master-hub.md) — it
+> maps every target **company** and **role** to the exact **GitHub repos** and **resume file**
+> to use, with live links. Every linked repo is public, CI-green, and resume-referenced.
 
 ## Quick timeline
 
