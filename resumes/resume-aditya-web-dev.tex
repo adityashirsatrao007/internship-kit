@@ -1,0 +1,204 @@
+%-------------------------
+% WEB DEVELOPER INTERN RESUME — LA TEX
+% Tailored: Frontend / Fullstack Web Development internships
+% Compile on Overleaf with pdfLaTeX. One page.
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx}
+\makeatletter
+\ifdefined\pdfglyphtounicode
+  \input{glyphtounicode}
+\fi
+\makeatother
+
+%----------FONT----------
+\renewcommand{\rmdefault}{ptm}
+
+%----------COLORS----------
+\definecolor{darkblue}{RGB}{31,78,121}
+
+%----------PAGE STYLE----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedright
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+% ---- TIGHTER VERTICAL SPACING (fits one page)
+\setlist{topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+%----------SECTION STYLE----------
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{darkblue}
+}{}{0em}{}[\color{darkblue}\titlerule \vspace{-5pt}]
+
+\makeatletter
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+\makeatother
+
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item \small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.15in, label={}]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+\begin{itemize}[leftmargin=*]
+}
+
+\newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}
+}
+
+%-------------------------------------------
+%%%%%% RESUME STARTS HERE %%%%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \scshape \color{darkblue} Aditya Shirsatrao} \\ \vspace{3pt}
+    \small
+    \href{mailto:adityashirsatrao007@gmail.com}{\underline{adityashirsatrao007@gmail.com}} $\cdot$
+    +91-7387-384655 $\cdot$
+    \href{https://github.com/adityashirsatrao007}{\underline{GitHub}} $\cdot$
+    \href{https://www.linkedin.com/in/adityashirsatrao007}{\underline{LinkedIn}} $\cdot$
+    \href{https://huggingface.co/adityashirsatrao007}{\underline{HuggingFace}} \\
+    \small Solapur, Maharashtra, India
+\end{center}
+
+%----------PROFESSIONAL SUMMARY----------
+\section{Professional Summary}
+\small{
+Web Developer with hands-on experience building responsive, full-stack web applications using React.js, Node.js, and FastAPI. Skilled in frontend/backend development, REST API design, Git/GitHub workflows, and integrating AI APIs into production applications. Strong foundation in HTML, CSS, JavaScript, and modern web architecture with a track record of shipping production-grade, scalable platforms.
+}
+
+%----------EDUCATION----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{N. K. Orchid College of Engineering \& Technology}{Solapur, Maharashtra}
+{B.Tech in Artificial Intelligence and Data Science -- \textbf{CGPA: 8.5/10}}{Aug. 2023 -- Present (Expected 2027)}
+\resumeSubHeadingListEnd
+
+%----------TECHNICAL SKILLS----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+\item{
+\textbf{Frontend:} HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Responsive Design, Monaco Editor, Real-time UI with WebSockets \\
+\textbf{Backend:} Node.js, Express.js, FastAPI, REST API Design, PostgreSQL, MongoDB, Redis, Microservices, Authentication (JWT, RBAC) \\
+\textbf{AI Integration:} HuggingFace Transformers, OpenAI Whisper, AI/Chatbot API Integration, NLP-based Features \\
+\textbf{Tools \& Workflow:} Git, GitHub, GitHub Actions CI/CD, Docker, Celery, Debugging \& Testing \\
+\textbf{Other:} Python, Java, C++, SQL, DSA (366+ LeetCode problems)
+}
+}
+\end{itemize}
+
+%----------EXPERIENCE----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Fullstack Web Development Intern}{Unified Mentor Pvt. Ltd}
+{Frontend, Backend \& AI-Integrated Web Systems}{Jul. 2025 -- Jan. 2026}
+\resumeItemListStart
+\resumeItem{Built an \textbf{AI-powered code review web platform} integrating GitHub PR workflows, AI APIs, and a responsive frontend dashboard; reduced analysis latency by \textbf{45\%} through asynchronous backend processing and caching.}
+\resumeItem{Developed a \textbf{real-time collaborative web IDE} with \textbf{sub-100ms} sync using WebSockets and Socket.IO; built a responsive frontend with Monaco Editor and live multiplayer cursors.}
+\resumeItem{Built and deployed REST APIs and automation workflows for a distributed ML inference platform, improving throughput by \textbf{60\%} via request batching, caching, and monitoring dashboards.}
+\resumeItem{Used Git/GitHub for version control and collaborative development across all projects; debugged, tested, and optimized performance throughout the development lifecycle.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------PROJECTS----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/adityashirsatrao007/SentinelX}{\underline{SentinelX: AI-Powered Cybersecurity Platform}}} $|$ \emph{FastAPI, React, HuggingFace, PostgreSQL, Docker}}{May 2026}
+\resumeItemListStart
+\resumeItem{Built a full-stack threat detection web application with backend APIs for real-time analysis of phishing, scams, and social engineering attacks across email, SMS, and voice.}
+\resumeItem{Implemented JWT authentication, RBAC, and automated async task workflows (Celery + Redis) for production deployment, with HuggingFace DistilBERT and OpenAI Whisper AI integration.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/adityashirsatrao007/Core-4}{\underline{Tracelify: Log Aggregation \& Crash Analytics Platform}}} $|$ \emph{FastAPI, React, PostgreSQL, Docker, Microservices}}{Apr. 2026}
+\resumeItemListStart
+\resumeItem{Built a full-stack log aggregation and crash analytics platform with a React dashboard for real-time visualization and a FastAPI backend with clean, modular REST API design.}
+\resumeItem{Implemented role-based multi-tenant access control and reduced code duplication by \textbf{40\%} using reusable design patterns; developed cross-platform SDKs in 6 languages.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Real-Time Collaborative IDE} $|$ \emph{WebSockets, Socket.IO, Monaco Editor, Redis}}{2025}
+\resumeItemListStart
+\resumeItem{Engineered a real-time collaborative code editor supporting \textbf{sub-100ms} synchronization for concurrent users using WebSockets, Socket.IO, and CRDT-based operational transforms.}
+\resumeItem{Implemented live multiplayer cursors, session replay, and Redis pub/sub for scalable presence.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{StreamVista -- Personalized Streaming Feed} $|$ \emph{React, Node.js, MongoDB, TensorFlow}}{May 2025 -- Jun. 2025}
+\resumeItemListStart
+\resumeItem{Built a Netflix-style personalized feed using collaborative filtering and content tags; improved user engagement predictions by \textbf{37\%} using TensorFlow model pipelines.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------LEADERSHIP & ACHIEVEMENTS----------
+\section{Leadership \& Achievements}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\resumeItem{\textbf{Hackathon Champion:} 1st Place Hack to Future 3.0 (600+ teams, INR 50,000) for SentinelX; 1st Runner-Up Orchathon 2K26 (800+ teams) for Tracelify.}
+\resumeItem{\textbf{Open Source:} 50+ PRs merged across Google (OSS-Fuzz), Microsoft (VibeVoice), Apache (DataFusion), and Hedera Hashgraph (Hiero SDK).}
+\resumeItem{\textbf{Class Representative (2023-2027):} Elected for AI \& DS cohort (120+ students); organized technical seminars and coding workshops.}
+\resumeItem{\textbf{Certifications:} Kaggle AI Agents Intensive Course; JPMorgan Chase \& Electronic Arts SWE Virtual Experience; NPTEL Programming in Java (Elite+Gold) and Joy of Computing using Python.}
+\end{itemize}
+
+\end{document}

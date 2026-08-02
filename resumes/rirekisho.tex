@@ -1,0 +1,114 @@
+% =====================================================================
+%  履歴書 (RIREKISHO) — JAPANESE RESUME — LA TEX
+%  ⚠ IMPORTANT: This file MUST be compiled with XeLaTeX on Overleaf
+%  (Menu → Compiler: XeLaTeX), and set the main font to a Japanese font
+%  that Overleaf has (e.g., IPAexMincho, Noto Sans CJK JP, TakaoMincho).
+%
+%  HOW TO USE ON OVERLEAF:
+%  1. New Project → Blank
+%  2. Menu → Compiler → XeLaTeX
+%  3. Add this file's content
+%  4. Replace [bracketed] fields. If you cannot type Japanese yet,
+%     keep the structure and fill in katakana/romaji for names.
+%
+%  WHEN TO USE: traditional Japanese companies or when HR explicitly asks.
+%  English-first companies (Mercari, Rakuten, Google Japan, Sony)
+%  do NOT require this — use resume-en-ats.tex instead.
+%  =====================================================================
+\documentclass[a4paper,10pt]{article}
+
+% Use ctex for Chinese/Japanese typesetting support
+\usepackage[UTF8]{ctex}
+\setCJKmainfont{Noto Serif CJK JP} % or: IPAexMincho / TakaoMincho
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+
+\usepackage{amsmath} % for numeric alignment if needed
+
+% Define table column helpers
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\definecolor{thin}{gray}{0.4}
+
+\begin{document}
+
+% ---- Title
+\begin{center}
+  {\LARGE\bfseries 履 歴 書}\\[4pt]
+  {\small 提出日: [西暦20XX年X月X日]}
+\end{center}
+
+% ---- Layout table (fixed standard rirekisho layout)
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|L{3.5cm}|L{6cm}|L{3.5cm}|L{3.5cm}|}
+  \hline
+  \multicolumn{4}{|l|}{{\bfseries 氏名}（ふりがな）} \\ \hline
+  \multicolumn{4}{|l|}{\ \  [フルネーム]（[ふりがな or カタカナ]）} \\ \hline
+  \multicolumn{2}{|l|}{{\bfseries 生年月日}} &
+  \multicolumn{2}{l|}{{\bfseries 性別}} \\ \hline
+  \multicolumn{2}{|l|}{\ \  [西暦20XX年X月X日] 生} &
+  \multicolumn{2}{l|}{\ \  [男/女]} \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 現住所}} \\ \hline
+  \multicolumn{4}{|l|}{\ \  [郵便番号XXX-XXXX、住所、電話番号]} \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 連絡先（現住所と異なる場合のみ）}} \\ \hline
+  \multicolumn{4}{|l|}{\ \  [必要時のみ記入]} \\ \hline
+  \multicolumn{2}{|l|}{{\bfseries 学歴}} & \multicolumn{2}{l|}{{\bfseries 職歴}} \\ \hline
+  \multicolumn{2}{|L{9.5cm}|}{
+    \begin{tabular}{@{}L{2.6cm}L{6.6cm}@{}}
+      {[20XX年4月]} & {[大学・学部・学科 入学]} \\
+      {[20XX年3月]} & {[大学・学部・学科 卒業見込]} \\
+    \end{tabular}
+  } &
+  \multicolumn{2}{|L{7cm}|}{
+    \begin{tabular}{@{}L{2.6cm}L{4.1cm}@{}}
+      [なし] & \\
+    \end{tabular}
+  } \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 免許・資格}} \\ \hline
+  \multicolumn{4}{|l|}{
+    \begin{tabular}{@{}L{2.6cm}L{13cm}@{}}
+      {[20XX年X月]} & {[JLPT N5 合格]} \\
+      {[20XX年X月]} & {[TOEIC XX点 / その他]} \\
+    \end{tabular}
+  } \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 志望動機}} \\ \hline
+  \multicolumn{4}{|L{16cm}|}{
+    \begin{minipage}[t]{15.5cm}
+      私は、大学でコンピュータサイエンスを専攻し、Pythonとデータ構造・
+      アルゴリズムを学んでおります。[会社の事業内容、例：ECプラットフォーム]
+      に強く魅力を感じ、御社の技術力とグローバルな環境で働きたいと
+      考えています。現在、日本語能力試験N5に合格しており、さらに日本語を
+      磨きながら、御社の[事業名]事業に貢献したいと願っております。\\
+      どうぞよろしくお願いいたします。
+    \end{minipage}
+  } \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 趣味・特技}} \\ \hline
+  \multicolumn{4}{|L{16cm}|}{\ \ [コーディング、読書、運動 など]} \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 本人希望欄}} \\ \hline
+  \multicolumn{4}{|L{16cm}|}{\ \ [例：貴社の規定に従います / 勤務地：東京 など]} \\ \hline
+\end{tabular}
+
+\vspace{6pt}
+\begin{flushright}
+  {\bfseries [あなたの名前]}
+\end{flushright}
+
+% ---- Notes (delete before submitting)
+\vspace{4pt}
+{\tiny \color{thin}
+\textbf{REMINDERS (delete this block before printing/submitting):}\\
+- Photo 4.5cm×3.5cm or 3cm×4cm, business attire, taken within 6 months.\\
+- Write in black ink; do not leave blank lines mid-section.\\
+- Dates must be consistent (use 西暦 = western calendar).\\
+- 志望動機 in formal keigo; never write the company name directly (use 御社).\\
+- Have a Japanese speaker review before submitting.
+}
+
+\end{document}

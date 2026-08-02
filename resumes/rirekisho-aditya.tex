@@ -1,0 +1,112 @@
+% =====================================================================
+%  履歴書 (RIREKISHO) — ADITYA SHRISATRAO
+%  ⚠ IMPORTANT: This file MUST be compiled with XeLaTeX on Overleaf
+%  (Menu → Compiler: XeLaTeX), with a Japanese font that Overleaf has
+%  (e.g., Noto Serif CJK JP / IPAexMincho / TakaoMincho).
+%
+%  NOTE: Fill your name in katakana (ふりがな) carefully — have a
+%  Japanese speaker verify アディティヤ・シルサトラオ before submitting.
+%  =====================================================================
+\documentclass[a4paper,10pt]{article}
+
+% Use ctex for Chinese/Japanese typesetting support
+\usepackage[UTF8]{ctex}
+\setCJKmainfont{Noto Serif CJK JP} % or: IPAexMincho / TakaoMincho
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*}
+
+\usepackage{amsmath} % for numeric alignment if needed
+
+% Define table column helpers
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\definecolor{thin}{gray}{0.4}
+
+\begin{document}
+
+% ---- Title
+\begin{center}
+  {\LARGE\bfseries 履 歴 書}\\[4pt]
+  {\small 提出日: 2026年[月]月[日]日}
+\end{center}
+
+% ---- Layout table (fixed standard rirekisho layout)
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|L{3.5cm}|L{6cm}|L{3.5cm}|L{3.5cm}|}
+  \hline
+  \multicolumn{4}{|l|}{{\bfseries 氏名}（ふりがな）} \\ \hline
+  \multicolumn{4}{|l|}{\ \  アディティヤ・シルサトラオ（アディティヤ・シルサトラオ）} \\ \hline
+  \multicolumn{2}{|l|}{{\bfseries 生年月日}} &
+  \multicolumn{2}{l|}{{\bfseries 性別}} \\ \hline
+  \multicolumn{2}{|l|}{\ \  2004年4月25日 生} &
+  \multicolumn{2}{l|}{\ \  男} \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 現住所}} \\ \hline
+  \multicolumn{4}{|l|}{\ \  Solapur, Maharashtra, India（インド・マハラシュトラ州・ソーラープル市）} \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 連絡先（現住所と異なる場合のみ）}} \\ \hline
+  \multicolumn{4}{|l|}{\ \  現住所と同じ / E-mail: adityashirsatrao007@gmail.com} \\ \hline
+  \multicolumn{2}{|l|}{{\bfseries 学歴}} & \multicolumn{2}{l|}{{\bfseries 職歴}} \\ \hline
+  \multicolumn{2}{|L{9.5cm}|}{
+    \begin{tabular}{@{}L{2.6cm}L{6.6cm}@{}}
+      2023年8月 & N. K. Orchid College of Engineering and Technology \\
+                 & 工学部 人工知能・データサイエンス学科 入学 \\
+      2027年3月 & 同上 卒業見込 \\
+    \end{tabular}
+  } &
+  \multicolumn{2}{|L{7cm}|}{
+    \begin{tabular}{@{}L{2.6cm}L{4.1cm}@{}}
+      2025年7月 & ソフトウェアエンジニアインターン \\
+                & （Unified Mentor Pvt. Ltd） \\
+      2025年9月 & AI/ML Lead（Google Developer Groups on Campus） \\
+    \end{tabular}
+  } \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 免許・資格}} \\ \hline
+  \multicolumn{4}{|l|}{
+    \begin{tabular}{@{}L{2.6cm}L{13cm}@{}}
+      2025年5月 & NPTEL Programming in Java（Elite+Gold, 91/100点） \\
+      2025年   & NPTEL The Joy of Computing using Python \\
+      2025年   & ソフトウェアエンジニアリングジョブシミュレーション（JPMorgan Chase / Electronic Arts） \\
+      2025年   & Kaggle AIエージェント集中講座 \\
+      （受験予定） & 日本語能力試験（JLPT）N4/N5 \\
+    \end{tabular}
+  } \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 志望動機}} \\ \hline
+  \multicolumn{4}{|L{16cm}|}{
+    \begin{minipage}[t]{15.5cm}
+      私は、大学で人工知能とデータサイエンスを専攻し、Python、Javaを中心に
+      データ構造・アルゴリズムや分散システムを学んでおります。セキュリティ、
+      可観測性、法務AIなどの分野で6件以上のプロダクトを開発し、国内600〜800
+      チーム規模のハッカソンで優勝・準優勝の実績があります。日本のテクノロジー
+      産業とものづくり文化に魅力を感じ、日本語能力試験N5合格を目指して学習を
+      続けております。御社の技術力とグローバルな環境で働きながら、エンジニア
+      としての経験を積み、御社の事業に貢献したいと考えております。
+    \end{minipage}
+  } \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 趣味・特技}} \\ \hline
+  \multicolumn{4}{|L{16cm}|}{\ \  競技プログラミング、チェス、新しいテクノロジーの学習（特にAI・LLM）、日本語の勉強} \\ \hline
+  \multicolumn{4}{|l|}{{\bfseries 本人希望欄}} \\ \hline
+  \multicolumn{4}{|L{16cm}|}{\ \  勤務地：東京を希望 / その他は貴社の規定に従います} \\ \hline
+\end{tabular}
+
+\vspace{6pt}
+\begin{flushright}
+  {\bfseries アディティヤ・シルサトラオ}
+\end{flushright}
+
+% ---- Notes (delete before submitting)
+\vspace{4pt}
+{\tiny \color{thin}
+\textbf{REMINDERS (delete this block before printing):}\\
+- Photo 4.5cm×3.5cm or 3cm×4cm, business attire, taken within 6 months.\\
+- Write in black ink; no blank lines mid-section; dates in 西暦 (western).\\
+- Have a Japanese speaker review the katakana name and 志望動機.\\
+- English-first companies (Mercari, Rakuten, Sony): use resume-aditya-japan.tex instead.
+}
+
+\end{document}

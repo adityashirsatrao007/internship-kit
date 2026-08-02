@@ -1,0 +1,130 @@
+% =====================================================================
+%  ATS-FRIENDLY SOFTWARE ENGINEER RESUME — LA TEX
+%  Compile on Overleaf with pdfLaTeX (default). One page. Single column.
+%
+%  HOW TO USE:
+%  1. Create a new project on Overleaf (overleaf.com) → New Project → Blank
+%  2. Replace this file's content with this whole file
+%  3. Menu → Compiler: pdfLaTeX, TeX Live version: Latest, and click Compile
+%  4. Replace [bracketed] placeholders with your info
+%
+%  ATS RULES BUILT IN (from 2026 ATS studies):
+%  - Single column, no tables, no icons, no two-column layouts
+%  - Standard section headings: Skills, Projects, Experience, Education
+%  - Metrics in every bullet
+%  - No photo, no header/footer with contact info
+%  =====================================================================
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+% ---- COLOR: keep subtle / dark. Do NOT use color for ATS-critical text.
+\definecolor{accent}{HTML}{2F343B} % near-black gray-blue
+
+% ---- TITLE (name)
+\newcommand{\name}[1]{{\Huge\bfseries\color{accent}#1}\\[4pt]}
+\newcommand{\contact}[1]{{\small#1}\\[6pt]}
+
+% ---- SECTION HEADINGS (standard names, spaced, underlined)
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0pt}{}[\vspace{-2pt}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% ---- BULLETS: compact, standard round bullets, no icons
+\setlist[itemize]{
+  leftmargin=1.1em,
+  itemsep=2pt,
+  topsep=3pt,
+  parsep=0pt,
+  label=\textbullet
+}
+
+% ---- SKILLS line helper
+\newcommand{\skillline}[1]{\par\noindent {\bfseries #1}}
+
+\begin{document}
+
+\begin{center}
+  \name{[YOUR FULL NAME]}
+  \contact{[City, Country] $\cdot$ [Email] $\cdot$ [+XX-XXXX-XXXX] $\cdot$%
+           \href{https://linkedin.com/in/yourname}{linkedin.com/in/yourname} $\cdot$%
+           \href{https://github.com/yourname}{github.com/yourname}}
+\end{center}
+
+% ---------------------------------------------------------------------
+\section{Professional Summary}
+\noindent
+Computer Science undergraduate (Year [X]) with strong fundamentals in
+[Python, DSA]. Built [X] full-stack projects used by [N] users and solved
+[N] LeetCode problems. Seeking a [Software Engineering] internship to ship
+production code in a [scalable / high-performance] team.
+
+% ---------------------------------------------------------------------
+\section{Technical Skills}
+\skillline{Languages:} Python, Java, JavaScript, TypeScript, SQL\\
+\skillline{Frameworks:} React, Node.js, FastAPI, Django\\
+\skillline{Databases:} PostgreSQL, MongoDB, SQLite\\
+\skillline{Tools:} Git, GitHub Actions, Docker, REST APIs, pytest\\
+\skillline{Concepts:} Data Structures \& Algorithms, OOP, CI/CD, System Design (basics)
+
+% ---------------------------------------------------------------------
+\section{Projects}
+
+\textbf{[Project 1 Name]} \hfill \small{\href{https://github.com/yourname/p1}{GitHub} $\cdot$ \href{https://p1.vercel.app}{Live Demo}} \normalsize\\
+e.g., \textit{URL Shortener / API Gateway / Marketplace}
+\begin{itemize}
+  \item Built a REST API in [FastAPI/Python] handling [X] requests/sec with [PostgreSQL] persistence, reducing response time to [X] ms
+  \item Implemented [rate limiting / auth / caching] using [tool], cutting [metric] by [X]\%
+  \item Deployed with [Docker / GitHub Actions + AWS], achieving [X]\% uptime
+  \item Wrote [X] unit tests with [pytest/Jest], raising coverage to [X]\%
+\end{itemize}
+
+\textbf{[Project 2 Name]} \hfill \small{\href{https://github.com/yourname/p2}{GitHub} $\cdot$ \href{https://p2.vercel.app}{Live Demo}} \normalsize\\
+e.g., \textit{Full-stack Dashboard / Job Tracker}
+\begin{itemize}
+  \item Built a full-stack app [React + Node.js + PostgreSQL] used by [N] users
+  \item Added [search / pagination / state management], improving [page load] by [X]\%
+  \item Containerized with Docker and set up CI/CD in GitHub Actions, cutting deploy time from [X] to [Y] minutes
+\end{itemize}
+
+\textbf{[Project 3 Name]} \hfill \small{\href{https://github.com/yourname/p3}{GitHub}} \normalsize\\
+e.g., \textit{DSA Visualizer / Algorithm Library}
+\begin{itemize}
+  \item Implemented [algorithm] visualizer in [language], used by [N] students
+  \item Optimized [algorithm] from O(X) to O(Y); documented complexity in README
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Experience}
+
+\textbf{[Company / Club / Open Source]} \hfill \textbf{[Role]}\\
+{[Month Year -- Month Year]} \hfill {[Location]}
+\begin{itemize}
+  \item [What you shipped / owned] using [tech], [quantified result]
+  \item [Led / Automated / Reduced] [thing] by [X]\%, [metric]
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Education}
+\textbf{[B.S. Computer Science / B.Tech]} \hfill \textbf{[University Name]}\\
+{[Expected Graduation: Month Year]} \hfill GPA: {[X.X/4.0]} (if 3.0+)
+\begin{itemize}
+  \item Relevant coursework: Data Structures, Algorithms, Databases, Operating Systems, OOP
+  \item Awards: [hackathon top-N, scholarship]
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Certifications}
+\begin{itemize}
+  \item [AWS Certified Cloud Practitioner] -- 2026
+  \item [Other certification] -- 2026
+\end{itemize}
+
+\end{document}

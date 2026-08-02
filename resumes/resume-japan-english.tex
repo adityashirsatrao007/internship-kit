@@ -1,0 +1,129 @@
+% =====================================================================
+%  SOFTWARE ENGINEER RESUME FOR JAPAN (ENGLISH) — LA TEX
+%  Compile on Overleaf with pdfLaTeX. 1-2 pages allowed in Japan.
+%  Use for: Mercari, Rakuten, Sony, LY Corp, Google Japan, HENNGE, Woven.
+%
+%  WHY A SEPARATE JAPAN VERSION:
+%  - Includes a LANGUAGES section (JLPT level is expected)
+%  - Includes RELOCATION / VISA statement (recruiters scan for it)
+%  - Japan allows 2 pages for tech resumes
+%  =====================================================================
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\definecolor{accent}{HTML}{2F343B}
+
+\newcommand{\name}[1]{{\Huge\bfseries\color{accent}#1}\\[4pt]}
+\newcommand{\contact}[1]{{\small#1}\\[6pt]}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0pt}{}[\vspace{-2pt}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\setlist[itemize]{
+  leftmargin=1.1em,
+  itemsep=2pt,
+  topsep=3pt,
+  parsep=0pt,
+  label=\textbullet
+}
+
+\newcommand{\skillline}[1]{\par\noindent {\bfseries #1}}
+
+\begin{document}
+
+\begin{center}
+  \name{[YOUR FULL NAME]}
+  \contact{Tokyo, Japan (or: [Your City] -- willing to relocate to Japan) $\cdot$%
+           [Email] $\cdot$ [+XX-XXXX-XXXX] $\cdot$%
+           \href{https://linkedin.com/in/yourname}{linkedin.com/in/yourname} $\cdot$%
+           \href{https://github.com/yourname}{github.com/yourname}}
+\end{center}
+
+% ---------------------------------------------------------------------
+\section{Professional Summary}
+\noindent
+Computer Science undergraduate (Year [X]) with [X] full-stack projects and
+strong DSA fundamentals in [Python/Java]. Currently studying Japanese
+(JLPT N5, preparing N4). Seeking a Software Engineering internship in Tokyo
+to contribute to [product-focused / high-scale] development and grow within
+the Japanese tech ecosystem.
+
+% ---------------------------------------------------------------------
+\section{Technical Skills}
+\skillline{Languages:} Python, Java, JavaScript, TypeScript, SQL\\
+\skillline{Frameworks:} React, Node.js, FastAPI, Django\\
+\skillline{Databases:} PostgreSQL, MongoDB, SQLite\\
+\skillline{Tools:} Git, GitHub Actions, Docker, REST APIs\\
+\skillline{Concepts:} DSA, OOP, CI/CD, Microservices (basics)
+
+% ---------------------------------------------------------------------
+\section{Projects}
+
+\textbf{[Project 1 Name] -- e.g., Marketplace App (Mercari-style listing)} \hfill \small{\href{https://github.com/yourname/p1}{GitHub} $\cdot$ \href{https://p1.vercel.app}{Live}} \normalsize\\
+\begin{itemize}
+  \item Built a full-stack product-listing API [FastAPI + PostgreSQL] handling [X] concurrent requests, with search and pagination
+  \item Implemented JWT authentication and [caching], reducing [latency] by [X]\%
+  \item Deployed on [AWS/Heroku] with Docker; [X]\% uptime
+  \item Wrote [X] tests (pytest), coverage [X]\%
+\end{itemize}
+
+\textbf{[Project 2 Name] -- e.g., DSA Visualizer / Algorithm Platform} \hfill \small{\href{https://github.com/yourname/p2}{GitHub}} \normalsize\\
+\begin{itemize}
+  \item Built a React + TypeScript visualizer for [algorithms], used by [N] students
+  \item Documented time/space complexity for each algorithm in README (signals CS rigor, valued by Japanese recruiters)
+\end{itemize}
+
+\textbf{[Project 3 Name] -- e.g., Dashboard / E-commerce} \hfill \small{\href{https://github.com/yourname/p3}{GitHub} $\cdot$ \href{https://p3.vercel.app}{Live}} \normalsize\\
+\begin{itemize}
+  \item Built [X] with [stack], handling [loading/empty/error] states, mobile-responsive
+  \item Added [feature], improving [metric] by [X]\%
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Experience}
+
+\textbf{[Company / Club]} \hfill \textbf{[Role]}\\
+{[Month Year -- Month Year]} \hfill {[Location]}
+\begin{itemize}
+  \item [Outcome-focused bullet with metric and tech]
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Education}
+\textbf{[B.S./B.Tech Computer Science]} \hfill \textbf{[University]}\\
+{[Expected Graduation: Month Year]} \hfill GPA: {[X.X/4.0]} (if 3.0+)
+\begin{itemize}
+  \item Relevant coursework: Data Structures, Algorithms, Databases, Operating Systems
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Languages}
+\begin{itemize}
+  \item \textbf{English:} Professional working proficiency (B2/C1)
+  \item \textbf{Japanese:} JLPT N5 (currently preparing for N4) % ALWAYS list; even N5 signals commitment
+  \item \textbf{Native:} [Your language]
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Certifications}
+\begin{itemize}
+  \item [AWS, Coursera, etc.] -- 2026
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Relocation / Visa}
+\begin{itemize}
+  \item Willing to relocate to Tokyo/Japan for internship
+  \item [If applicable:] Eligible for Designated Activities internship visa / student visa
+\end{itemize}
+
+\end{document}

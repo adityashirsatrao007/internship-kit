@@ -1,0 +1,144 @@
+% =====================================================================
+%  SOFTWARE ENGINEER RESUME FOR JAPAN (ENGLISH) — ADITYA SHRISATRAO
+%  Compile on Overleaf with pdfLaTeX. 1-2 pages allowed in Japan.
+%  Use for: Mercari, Rakuten, Sony, LY Corp, Google Japan, HENNGE, Woven.
+%  =====================================================================
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\definecolor{accent}{HTML}{2F343B}
+
+\newcommand{\name}[1]{{\Huge\bfseries\color{accent}#1}\\[4pt]}
+\newcommand{\contact}[1]{{\small#1}\\[6pt]}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0pt}{}[\vspace{-2pt}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\setlist[itemize]{
+  leftmargin=1.1em,
+  itemsep=2pt,
+  topsep=3pt,
+  parsep=0pt,
+  label=\textbullet
+}
+
+\newcommand{\skillline}[1]{\par\noindent {\bfseries #1}}
+
+\begin{document}
+
+\begin{center}
+  \name{Aditya Shirsatrao}
+  \contact{Solapur, Maharashtra, India -- willing to relocate to Japan for internship $\cdot$%
+           adityashirsatrao007@gmail.com $\cdot$ +91-7387-384655 $\cdot$%
+           \href{https://github.com/adityashirsatrao007}{github.com/adityashirsatrao007} $\cdot$%
+           \href{https://www.linkedin.com/in/adityashirsatrao007}{linkedin.com/in/adityashirsatrao007}}
+\end{center}
+
+% ---------------------------------------------------------------------
+\section{Professional Summary}
+\noindent
+B.Tech Artificial Intelligence and Data Science undergraduate (CGPA 8.5/10) with 6+ production-grade full-stack projects, 366+ solved LeetCode problems, and hands-on experience building scalable backend and ML systems. Currently studying Japanese (JLPT N5, preparing for N4) with strong interest in the Japanese tech ecosystem. Seeking a Software Engineering / Backend / AI internship in Japan to contribute to high-scale, product-focused development.
+
+% ---------------------------------------------------------------------
+\section{Technical Skills}
+\skillline{Languages:} Python, Java, C++, JavaScript (ES6+), TypeScript, SQL\\
+\skillline{Backend:} FastAPI, Node.js, Express.js, REST APIs, WebSockets, Redis, Kafka, Celery, Message Queues\\
+\skillline{Frontend:} React.js, Next.js, HTML5, CSS3, Tailwind CSS\\
+\skillline{AI/ML:} PyTorch, TensorFlow, HuggingFace Transformers, scikit-learn, OpenCV, RAG, LangChain, LLMs\\
+\skillline{Databases:} PostgreSQL, MySQL, MongoDB, ChromaDB\\
+\skillline{DevOps:} Docker, Kubernetes, GitHub Actions CI/CD, AWS (EC2/S3/Lambda), Linux\\
+\skillline{Concepts:} DSA, OOP, System Design, Microservices, Distributed Systems
+
+% ---------------------------------------------------------------------
+\section{Projects}
+
+\textbf{SentinelX -- AI Cybersecurity Platform} \hfill \small{\href{https://github.com/adityashirsatrao007/SentinelX}{GitHub}} \normalsize\\
+\textit{FastAPI, HuggingFace Transformers, Whisper, Celery, Redis, PostgreSQL} \hfill May 2026
+\begin{itemize}
+  \item Built a production-grade multi-channel threat-detection backend (email/SMS/voice) using a multi-model ML pipeline: DistilBERT for NLP classification, OpenAI Whisper for speech-to-text, and LLM enrichment
+  \item Engineered a weighted 4-component risk-scoring engine with async Celery + Redis task queues; won \textbf{1st Place} at Hack to Future 3.0 (600+ teams, INR 50,000 prize)
+\end{itemize}
+
+\textbf{Tracelify -- Cross-Platform Error Tracking \& Observability} \hfill \small{\href{https://github.com/adityashirsatrao007/Core-4}{GitHub}} \normalsize\\
+\textit{Python, FastAPI, React, AWS Bedrock, PostgreSQL} \hfill Apr 2026
+\begin{itemize}
+  \item Designed and published a multi-language error-tracking SDK (PyPI: tracelify-sdk v1.0.0) with native support for Python, Java, Kotlin, Go, C++, JavaScript
+  \item Built a FastAPI backend with multi-tenant RBAC, Redis caching, and LLM-powered automated error reports; \textbf{1st Runner-Up} at Orchathon 2K26 (800+ teams)
+\end{itemize}
+
+\textbf{Fraud Detection System} \hfill \small{\href{https://github.com/adityashirsatrao007/fraud-detection-system}{GitHub}} \normalsize\\
+\textit{FastAPI, Autoencoders, React, D3.js} \hfill Dec 2024 -- Present
+\begin{itemize}
+  \item Architected a real-time anomaly-detection engine (unsupervised autoencoders) on 500k+ transactions; reduced inference latency to \textbf{$<$50ms} at 100 requests/second
+\end{itemize}
+
+\textbf{Privacy-First LLM Assistant (RAG)} \hfill \small{\href{https://github.com/adityashirsatrao007/llm-personal-assistant}{GitHub}} \normalsize\\
+\textit{RAG, Llama 3, ChromaDB, Ollama} \hfill Nov 2024 -- Dec 2024
+\begin{itemize}
+  \item Built a local Retrieval-Augmented Generation system with Hybrid Search + cross-encoder re-ranking, improving retrieval precision by \textbf{40\%} on technical corpora
+\end{itemize}
+
+\textbf{DevGuard -- RBAC API Gateway} \hfill \small{Code} \normalsize\\
+\textit{Express.js, JWT, PostgreSQL, Prisma} \hfill Oct 2024 -- Nov 2024
+\begin{itemize}
+  \item Built a secure backend API gateway with role-based access control and multi-session token logic for enterprise applications
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Experience}
+
+\textbf{Fullstack Web Development Intern} \hfill \textbf{Unified Mentor Pvt. Ltd}\\
+Jul 2025 -- Jan 2026 \hfill Remote
+\begin{itemize}
+  \item Architected an AI-powered code review platform with Kafka queues and Redis caching, reducing analysis latency by \textbf{45\%}
+  \item Engineered a real-time collaborative IDE (WebSockets, Socket.IO, CRDT) with sub-100ms synchronization for concurrent users
+  \item Built a distributed ML inference platform with autoscaling endpoints and monitoring, improving throughput by \textbf{60\%}
+\end{itemize}
+
+\textbf{AI/ML Lead} \hfill \textbf{Google Developer Groups on Campus (GDG-NKOCET)}\\
+Sep 2025 -- Present \hfill Solapur, India
+\begin{itemize}
+  \item Lead AI/ML workshops and mentorship for a \textbf{200+ student} community
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Education}
+\textbf{B.Tech in Artificial Intelligence and Data Science} \hfill \textbf{N. K. Orchid College of Engineering \& Technology}\\
+Expected Graduation: 2027 \hfill CGPA: 8.5/10
+\begin{itemize}
+  \item Relevant coursework: Data Structures \& Algorithms, Databases, Operating Systems, Distributed Systems, Machine Learning, Neural Networks, OOP
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Languages}
+\begin{itemize}
+  \item \textbf{Japanese:} JLPT N5 (currently preparing for N4)
+  \item \textbf{English:} Professional working proficiency
+  \item \textbf{Hindi / Marathi:} Native
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Achievements \& Certifications}
+\begin{itemize}
+  \item IEEE First-Author Publication presented at ICCTWC 2026; 3 national hackathon wins (600--800+ teams)
+  \item 50+ open source PRs merged across Google (OSS-Fuzz), Microsoft (VibeVoice), Apache (DataFusion), Hedera Hashgraph (Hiero SDK)
+  \item NPTEL Programming in Java (Elite+Gold, 91/100); JPMorgan Chase \& Electronic Arts SWE Virtual Experience; Kaggle AI Agents Intensive Course
+\end{itemize}
+
+% ---------------------------------------------------------------------
+\section{Relocation / Visa}
+\begin{itemize}
+  \item Willing to relocate to Tokyo / anywhere in Japan for an internship
+  \item Eligible for a Designated Activities (internship) visa; committed to reaching JLPT N3+ while working
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,186 @@
+%-------------------------
+% DATA ANALYST INTERN RESUME — LA TEX
+% Tailored: Data Analyst / Business Intelligence internships
+% Compile on Overleaf with pdfLaTeX. One page.
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\makeatletter
+\ifdefined\pdfglyphtounicode
+  \input{glyphtounicode}
+\fi
+\makeatother
+
+\renewcommand{\rmdefault}{ptm}
+\usepackage{mathptmx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% ---- TIGHTER VERTICAL SPACING (fits one page)
+\setlist{topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\makeatletter
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+\makeatother
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aditya Shirsatrao} \\ \vspace{3pt}
+    \small
+    \href{mailto:adityashirsatrao007@gmail.com}{\underline{adityashirsatrao007@gmail.com}} $\cdot$
+    +91-7387-384655 $\cdot$
+    \href{https://www.linkedin.com/in/adityashirsatrao007}{\underline{linkedin.com/in/adityashirsatrao007}} $\cdot$
+    \href{https://github.com/adityashirsatrao007}{\underline{github.com/adityashirsatrao007}} \\
+    \small Solapur, Maharashtra, India
+\end{center}
+
+%-----------OBJECTIVE-----------
+\section{Objective}
+  \small{Dedicated AI and Data Science undergraduate with strong analytical, statistical, and data-visualization skills. Experienced in data cleaning, statistical analysis, and building dashboards that translate raw data into actionable business insights. Seeking a Data Analyst internship to apply data-driven decision making to real business problems.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {N. K. Orchid College of Engineering \& Technology}{Solapur, Maharashtra}
+      {Bachelor of Technology in Artificial Intelligence and Data Science -- \textbf{CGPA: 8.5/10}}{Aug. 2023 -- Present (Expected 2027)}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, R, SQL, Java, JavaScript} \\
+     \textbf{Data Analysis \& Manipulation}{: pandas, NumPy, scikit-learn, data cleaning, statistical analysis, A/B testing} \\
+     \textbf{Data Visualization}{: Matplotlib, Seaborn, Tableau, Power BI, Advanced Excel (Pivot Tables, Charts)} \\
+     \textbf{Database Management}{: MySQL, PostgreSQL, MongoDB} \\
+     \textbf{Statistics \& Concepts}{: Hypothesis Testing, Regression, Probability, Feature Engineering} \\
+     \textbf{Communication}{: Data storytelling, report writing, stakeholder presentations}
+    }}
+  \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://github.com/adityashirsatrao007/Customer-Churn-Analysis}{\textbf{Customer Churn Analysis}}}{}
+      \resumeItemListStart
+        \resumeItem{Analyzed telecom customer data from Kaggle to identify patterns and root causes of customer churn.}
+        \resumeItem{Built Logistic Regression and Decision Tree models achieving up to \textbf{81\% accuracy} and \textbf{0.84 AUC}.}
+        \resumeItem{Provided actionable business insights such as focusing on first-year retention and payment-method risk, directly influencing retention strategy.}
+        \resumeItem{Technologies: Python, pandas, matplotlib, seaborn, scikit-learn.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Decision Analytics Dashboard} $|$ \emph{Business Intelligence, KPI Tracking, Visualization}}{2025}
+      \resumeItemListStart
+        \resumeItem{Built an executive-style dashboard to visualize key performance indicators (KPIs), trends, and operational metrics for data-driven strategic planning.}
+        \resumeItem{Enabled faster decision-making by translating complex datasets into intuitive insights for non-technical stakeholders.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{CinePulse -- Live Media Trend Analytics} $|$ \emph{FastAPI, D3.js, WebSockets}}{Feb. 2025 -- Apr. 2025}
+      \resumeItemListStart
+        \resumeItem{Built a real-time dashboard tracking content trends by region, genre, and popularity; streamed metrics via a WebSocket API using asynchronous FastAPI.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{ABTestify -- A/B Test and Feature Rollout System} $|$ \emph{Next.js, Redis, Firebase, Chart.js}}{Apr. 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Created a dashboard for live A/B testing and experiment-result analytics with bucketed users; implemented flag gating logic and cohort-based visualization.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Data \& Model Quality Monitoring System} $|$ \emph{Risk Management, Analytics}}{2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Developed a monitoring framework to track data drift and performance degradation in analytical models, implementing early-warning indicators to mitigate business risk.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fullstack Web Development Intern}{Unified Mentor Pvt. Ltd}
+      {Data-Driven Product Development}{Jul. 2025 -- Jan. 2026}
+      \resumeItemListStart
+        \resumeItem{Derived insights from user interaction and telemetry data to optimize product features; used event-streaming analytics (Kafka, Spark Streaming) for near real-time dashboards, anomaly detection, and alerting.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {AI/ML Lead}{Google Developer Groups on Campus (GDG-NKOCET)}
+      {Data-Focused Community Leadership}{Sep. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Conducted workshops on data analysis, visualization, and ML for a 200+ student community; mentored students on translating data into decisions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeItem{\textbf{IEEE First-Author Publication} on multilingual sentiment analysis, presented at ICCTWC 2026.}
+    \resumeItem{\textbf{Hackathon:} 1st Place Hack to Future 3.0 (600+ teams); 1st Runner-Up Orchathon 2K26 (800+ teams).}
+    \resumeItem{\textbf{Competitive Programming:} 366+ LeetCode problems (104 Easy, 176 Medium, 86 Hard) + 50 SQL problems.}
+    \resumeItem{\textbf{Certifications:} NPTEL Programming in Java (Elite+Gold); NPTEL Joy of Computing using Python; JPMorgan Chase \& Electronic Arts SWE Virtual Experience; Kaggle AI Agents Intensive Course.}
+    \resumeItem{Delivered seminars on Chandrayaan-3 and AI; completed 50+ web development projects.}
+ \end{itemize}
+
+\end{document}

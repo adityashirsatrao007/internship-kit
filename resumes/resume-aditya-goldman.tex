@@ -1,0 +1,194 @@
+%-------------------------
+% GOLDMAN SACHS SWE INTERN RESUME — LA TEX
+% Tailored: Goldman Sachs Software Engineering Summer Intern
+% Emphasis: distributed systems, low-latency backends, Java/Python, financial-technology relevance
+% Compile on Overleaf with pdfLaTeX. One page.
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\makeatletter
+\ifdefined\pdfglyphtounicode
+  \input{glyphtounicode}
+\fi
+\makeatother
+
+% Font settings
+\renewcommand{\rmdefault}{ptm}
+\usepackage{mathptmx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\setlength{\footskip}{5pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% ---- TIGHTER VERTICAL SPACING (fits one page)
+\setlist{topsep=0pt,itemsep=0pt,parsep=0pt,partopsep=0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ATS readable
+\makeatletter
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+\makeatother
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Aditya Shirsatrao} \\ \vspace{3pt}
+    \small
+    \href{mailto:adityashirsatrao007@gmail.com}{\underline{adityashirsatrao007@gmail.com}} $\cdot$
+    +91-7387-384655 $\cdot$
+    \href{https://www.linkedin.com/in/adityashirsatrao007}{\underline{linkedin.com/in/adityashirsatrao007}} $\cdot$
+    \href{https://github.com/adityashirsatrao007}{\underline{github.com/adityashirsatrao007}} \\
+    \small Solapur, Maharashtra, India
+\end{center}
+
+%-----------OBJECTIVE-----------
+\section{Objective}
+  \small{Software engineering undergraduate with strong fundamentals in distributed systems, data structures, and object-oriented programming, and hands-on experience building low-latency, event-driven backends at scale. Seeking Goldman Sachs's Software Engineering Summer Internship to contribute to high-performance financial technology systems in a collaborative, risk-focused environment.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {N. K. Orchid College of Engineering \& Technology}{Solapur, Maharashtra}
+      {Bachelor of Technology in Artificial Intelligence and Data Science -- \textbf{CGPA: 8.5/10}}{Aug. 2023 -- Present (Expected 2027)}
+      \vspace{2pt}
+      \small{\item{
+       \textbf{Coursework}: Data Structures \& Algorithms, Operating Systems, Database Management Systems, Distributed Systems, OOP, Software Engineering, Machine Learning, Computer Networks.
+      }}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Fullstack Web Development Intern}{Unified Mentor Pvt. Ltd}
+      {Distributed Systems \& Backend Engineering}{Jul. 2025 -- Jan. 2026}
+      \resumeItemListStart
+        \resumeItem{Designed a \textbf{cloud-native microservices e-commerce platform} with payment orchestration, inventory consistency, and distributed caching using an event-driven architecture on Docker and Kubernetes.}
+        \resumeItem{Built an \textbf{AI-powered code review platform} processing GitHub pull requests asynchronously; integrated Kafka message queues and Redis caching, reducing analysis latency by \textbf{45\%} via parallel distributed workers.}
+        \resumeItem{Engineered a \textbf{real-time collaborative IDE} with sub-100ms synchronization using WebSockets, Socket.IO, Redis pub/sub, and CRDT-based operational transforms.}
+        \resumeItem{Developed an \textbf{event streaming analytics system} with Kafka and Apache Spark Streaming for near real-time dashboards, anomaly detection, and alerting.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AI/ML Lead}{Google Developer Groups on Campus (GDG-NKOCET)}
+      {Leadership \& Mentorship}{Sep. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Lead technical workshops and hackathon mentorship for a \textbf{200+ student} community, emphasizing clean architecture, testing, and system design.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Fraud Detection System} $|$ \emph{FastAPI, Autoencoders, Redis, React} $|$ \href{https://github.com/adityashirsatrao007/fraud-detection-system}{\underline{Code}}}{Dec 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Architected a real-time anomaly detection engine on 500k+ transactions; optimized inference to \textbf{$<$50ms} with async I/O, supporting 100 requests/second.}
+            \resumeItem{Reduced manual fraud-review workload by \textbf{40\%} via a visualization dashboard.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{DevGuard -- Role-Based Access Control APIs} $|$ \emph{Express.js, JWT, PostgreSQL, Prisma}}{Oct 2024 -- Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Built a secure backend API gateway with RBAC and multi-session token logic for enterprise applications.}
+            \resumeItem{Designed the Prisma schema, modular auth middlewares, and an endpoint access matrix.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Chess Engine} $|$ \emph{C, Minimax with Alpha-Beta Pruning}}{Jun 2024 -- Aug 2024}
+          \resumeItemListStart
+            \resumeItem{Engineered an AI-driven chess engine with custom board evaluation heuristics, move ordering, and depth-limited search; optimized decision speed in critical positions.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Backend ML Services Framework (Core-4)} $|$ \emph{Python, FastAPI, Design Patterns}}{Feb 2026 -- Mar 2026}
+          \resumeItemListStart
+            \resumeItem{Developed a modular backend framework using factory and strategy design patterns, reducing code duplication by \textbf{35\%} and achieving \textbf{>80\%} test coverage.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C++, JavaScript (ES6+), TypeScript, SQL} \\
+     \textbf{Backend \& Distributed Systems}{: FastAPI, Node.js, Express.js, Redis, Kafka, Message Queues, Microservices, REST APIs, WebSockets} \\
+     \textbf{Infrastructure}{: Docker, Kubernetes, GitHub Actions CI/CD, AWS (EC2/S3/Lambda), Linux, Grafana/Prometheus} \\
+     \textbf{Core Concepts}{: DSA (366+ LeetCode), System Design, OOP, Concurrency \& Asynchronous Programming, Databases, Security (RBAC, JWT)}
+    }}
+  \end{itemize}
+
+%-----------ACHIEVEMENTS & CERTIFICATIONS-----------
+\section{Achievements \& Certifications}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeItem{\textbf{Competitive Programmer:} 366+ LeetCode problems (104 Easy, 176 Medium, 86 Hard) + 50 SQL problems.}
+    \resumeItem{\textbf{IEEE First-Author Publication} at ICCTWC 2026; \textbf{1st Place} Hack to Future 3.0 (600+ teams); \textbf{1st Runner-Up} Orchathon 2K26 (800+ teams).}
+    \resumeItem{\textbf{Open Source:} 50+ PRs merged across Google (OSS-Fuzz), Microsoft (VibeVoice), Apache (DataFusion), Hedera Hashgraph (Hiero SDK).}
+    \resumeItem{\textbf{Certifications:} JPMorgan Chase \& Electronic Arts SWE Virtual Experience; NPTEL Programming in Java (Elite+Gold, 91/100); Kaggle AI Agents Intensive Course.}
+    \resumeItem{\textbf{Leadership:} Class Representative for a 120+ student cohort; seminar speaker on AI and Chandrayaan-3.}
+  \end{itemize}
+
+\end{document}
