@@ -108,7 +108,7 @@
     \small
     +91-7387-384655 $\cdot$
     \href{mailto:adityashirsatrao007@gmail.com}{\underline{adityashirsatrao007@gmail.com}} $\cdot$
-    \href{https://www.linkedin.com/in/adityashirsatrao007}{\underline{linkedin.com/in/adityashirsatrao007}} $\cdot$
+    \href{https://www.linkedin.com/in/adityashirsatrao}{\underline{linkedin.com/in/adityashirsatrao}} $\cdot$
     \href{https://github.com/adityashirsatrao007}{\underline{github.com/adityashirsatrao007}} $\cdot$
     \href{https://leetcode.com/u/adityashirsatrao007}{\underline{leetcode.com/u/adityashirsatrao007}} \\
     \small Solapur, Maharashtra, India
@@ -134,7 +134,7 @@
       {Backend, Distributed Systems \& AI-Integrated Products}{Jul. 2025 -- Jan. 2026}
       \resumeItemListStart
         \resumeItem{Architected an \textbf{AI-powered code review platform} processing GitHub pull requests asynchronously; integrated Kafka message queues and Redis caching, reducing analysis latency by \textbf{45\%} through parallel distributed workers and AST-based code search.}
-        \resumeItem{Engineered a \textbf{real-time collaborative IDE} with sub-100ms sync for concurrent users using WebSockets, Socket.IO, Redis pub/sub, and CRDT-based operational transforms; integrated Monaco Editor with live multiplayer cursors.}
+        \resumeItem{Engineered a \textbf{real-time collaborative IDE} with sub-100ms sync using WebSockets, Socket.IO, Redis pub/sub, and CRDT-based operational transforms.}
         \resumeItem{Built a \textbf{distributed ML inference platform} with autoscaling endpoints, model versioning, and Prometheus monitoring; improved throughput by \textbf{60\%} under concurrent load via request batching and inference caching.}
       \resumeItemListEnd
 
@@ -150,18 +150,24 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Fraud Detection System} $|$ \emph{FastAPI, Autoencoders, React, D3.js} $|$ \href{https://github.com/adityashirsatrao007/fraud-detection-system}{\underline{Code}}}{Dec 2024 -- Present}
+          {\textbf{Order Matching Engine} $|$ \emph{C++17, Price-Time Priority, GTC/IOC/FOK, FastAPI, WebSockets} $|$ \href{https://github.com/adityashirsatrao007/order-matching-engine}{\underline{Code}}}{Jun. 2026 -- Jul. 2026}
           \resumeItemListStart
-            \resumeItem{Architected a real-time anomaly detection engine using \textbf{unsupervised Autoencoders}, identifying novel fraud patterns across 500k+ transactions without prior labeling.}
-            \resumeItem{Optimized inference to \textbf{$<$50ms} by wrapping the scikit-learn pipeline in a FastAPI microservice with async I/O, supporting 100 requests/second.}
+            \resumeItem{Engineered a \textbf{dependency-free C++17 limit order book} with price-time priority and FIFO per level, supporting LIMIT/MARKET/STOP/STOP-LIMIT and GTC/IOC/FOK semantics with deterministic integer quantities.}
+            \resumeItem{Benchmarked matching throughput at \textbf{10.9M orders/sec} (0.09\textmu s/order); exposed a trade tape + depth feed over a FastAPI/WebSocket bridge; CI builds \& tests on every PR.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Privacy-First LLM Assistant} $|$ \emph{RAG, Llama 3, ChromaDB, Ollama} $|$ \href{https://github.com/adityashirsatrao007/llm-personal-assistant}{\underline{Code}}}{Nov 2024 -- Dec 2024}
+          {\textbf{SentinelX -- AI Threat Detection Platform} $|$ \emph{FastAPI, React, DistilBERT, Celery, Redis, PostgreSQL} $|$ \href{https://github.com/adityashirsatrao007/hackathon-project-3}{\underline{Code}}}{May 2026}
           \resumeItemListStart
-            \resumeItem{Engineered a local Retrieval-Augmented Generation system for secure PDF/TXT querying, ensuring zero external data exfiltration.}
-            \resumeItem{Implemented Hybrid Search (dense vector + sparse keyword) with cross-encoder re-ranking, improving retrieval precision by \textbf{40\%} on technical corpora.}
-            \resumeItem{Designed a persistent vector store with ChromaDB, enabling incremental indexing of 100+ documents without full rebuilds.}
+            \resumeItem{Built a production-grade, multi-channel threat-detection backend (email/SMS/voice) with a weighted 4-signal risk engine and async Celery + Redis task queues.}
+            \resumeItem{Integrated HuggingFace DistilBERT + OpenAI Whisper STT; shipped JWT auth, RBAC, and Docker Compose; \textbf{1st Place} Hack to Future 3.0 (600+ teams, INR 50,000).}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Tracelify -- Error Tracking \& Observability SDK} $|$ \emph{Python, FastAPI, React, PostgreSQL, CI/CD} $|$ \href{https://github.com/adityashirsatrao007/hackathon-project-1}{\underline{Code}}}{Apr. 2026}
+          \resumeItemListStart
+            \resumeItem{Designed and published a multi-language error-tracking SDK (PyPI \texttt{tracelify-sdk}) with native Python, Java, Kotlin, Go, C++, JavaScript clients.}
+            \resumeItem{Built a multi-tenant FastAPI backend with Redis caching and LLM-powered error reports; \textbf{1st Runner-Up} Orchathon 2K26 (800+ teams).}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 

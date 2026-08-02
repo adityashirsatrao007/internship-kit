@@ -98,7 +98,7 @@
     \small
     \href{mailto:adityashirsatrao007@gmail.com}{\underline{adityashirsatrao007@gmail.com}} $\cdot$
     +91-7387-384655 $\cdot$
-    \href{https://www.linkedin.com/in/adityashirsatrao007}{\underline{linkedin.com/in/adityashirsatrao007}} $\cdot$
+    \href{https://www.linkedin.com/in/adityashirsatrao}{\underline{linkedin.com/in/adityashirsatrao}} $\cdot$
     \href{https://github.com/adityashirsatrao007}{\underline{github.com/adityashirsatrao007}} \\
     \small Solapur, Maharashtra, India
 \end{center}
@@ -127,9 +127,8 @@
       {Distributed Systems \& Backend Engineering}{Jul. 2025 -- Jan. 2026}
       \resumeItemListStart
         \resumeItem{Designed a \textbf{cloud-native microservices e-commerce platform} with payment orchestration, inventory consistency, and distributed caching using an event-driven architecture on Docker and Kubernetes.}
-        \resumeItem{Built an \textbf{AI-powered code review platform} processing GitHub pull requests asynchronously; integrated Kafka message queues and Redis caching, reducing analysis latency by \textbf{45\%} via parallel distributed workers.}
+        \resumeItem{Built an \textbf{AI-powered code review platform} (Kafka + Redis, \textbf{45\%} lower latency via parallel workers) and an \textbf{event streaming analytics system} (Kafka + Spark Streaming) for real-time dashboards and alerting.}
         \resumeItem{Engineered a \textbf{real-time collaborative IDE} with sub-100ms synchronization using WebSockets, Socket.IO, Redis pub/sub, and CRDT-based operational transforms.}
-        \resumeItem{Developed an \textbf{event streaming analytics system} with Kafka and Apache Spark Streaming for near real-time dashboards, anomaly detection, and alerting.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -144,29 +143,24 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Fraud Detection System} $|$ \emph{FastAPI, Autoencoders, Redis, React} $|$ \href{https://github.com/adityashirsatrao007/fraud-detection-system}{\underline{Code}}}{Dec 2024 -- Present}
+          {\textbf{Order Matching Engine} $|$ \emph{C++17, Price-Time Priority, GTC/IOC/FOK, FastAPI, WebSockets, Redis} $|$ \href{https://github.com/adityashirsatrao007/order-matching-engine}{\underline{Code}}}{Jun. 2026 -- Jul. 2026}
           \resumeItemListStart
-            \resumeItem{Architected a real-time anomaly detection engine on 500k+ transactions; optimized inference to \textbf{$<$50ms} with async I/O, supporting 100 requests/second.}
-            \resumeItem{Reduced manual fraud-review workload by \textbf{40\%} via a visualization dashboard.}
+            \resumeItem{Engineered a \textbf{dependency-free C++17 limit order book} with price-time priority and FIFO per level, supporting LIMIT/MARKET/STOP/STOP-LIMIT and GTC/IOC/FOK semantics using deterministic integer quantities (no floats).}
+            \resumeItem{Benchmarked matching at \textbf{10.9M orders/sec} (0.09\textmu s/order); exposed trade tape + depth over a FastAPI/WebSocket feed; 9 assert-based unit tests run in CI on every PR.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{DevGuard -- Role-Based Access Control APIs} $|$ \emph{Express.js, JWT, PostgreSQL, Prisma}}{Oct 2024 -- Nov 2024}
+          {\textbf{Tracelify -- Distributed Observability Platform} $|$ \emph{FastAPI, React, Redis, PostgreSQL, Multi-language SDKs} $|$ \href{https://github.com/adityashirsatrao007/hackathon-project-1}{\underline{Code}}}{Apr. 2026}
           \resumeItemListStart
-            \resumeItem{Built a secure backend API gateway with RBAC and multi-session token logic for enterprise applications.}
-            \resumeItem{Designed the Prisma schema, modular auth middlewares, and an endpoint access matrix.}
+            \resumeItem{Built a multi-tenant error-tracking platform processing high-volume events with Redis caching and async workers; multi-language SDK (Python/Java/Kotlin/Go/C++/JS).}
+            \resumeItem{Designed RBAC, CORS, and a health-checked deployment with GitHub Actions CI + PyPI publishing.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Chess Engine} $|$ \emph{C, Minimax with Alpha-Beta Pruning}}{Jun 2024 -- Aug 2024}
+          {\textbf{SentinelX -- Real-Time Risk Scoring Platform} $|$ \emph{FastAPI, DistilBERT, Celery, Redis, PostgreSQL} $|$ \href{https://github.com/adityashirsatrao007/hackathon-project-3}{\underline{Code}}}{May 2026}
           \resumeItemListStart
-            \resumeItem{Engineered an AI-driven chess engine with custom board evaluation heuristics, move ordering, and depth-limited search; optimized decision speed in critical positions.}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Backend ML Services Framework (Core-4)} $|$ \emph{Python, FastAPI, Design Patterns}}{Feb 2026 -- Mar 2026}
-          \resumeItemListStart
-            \resumeItem{Developed a modular backend framework using factory and strategy design patterns, reducing code duplication by \textbf{35\%} and achieving \textbf{>80\%} test coverage.}
+            \resumeItem{Shipped a weighted multi-signal risk engine with async task queues, JWT auth, and RBAC — production-shaped backend demonstrating correctness, reliability, and auditability.}
+            \resumeItem{Win: \textbf{1st Place} Hack to Future 3.0 (600+ teams).}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -186,9 +180,9 @@
   \begin{itemize}[leftmargin=0.15in, label={}]
     \resumeItem{\textbf{Competitive Programmer:} 366+ LeetCode problems (104 Easy, 176 Medium, 86 Hard) + 50 SQL problems.}
     \resumeItem{\textbf{IEEE First-Author Publication} at ICCTWC 2026; \textbf{1st Place} Hack to Future 3.0 (600+ teams); \textbf{1st Runner-Up} Orchathon 2K26 (800+ teams).}
-    \resumeItem{\textbf{Open Source:} 50+ PRs merged across Google (OSS-Fuzz), Microsoft (VibeVoice), Apache (DataFusion), Hedera Hashgraph (Hiero SDK).}
-    \resumeItem{\textbf{Certifications:} JPMorgan Chase \& Electronic Arts SWE Virtual Experience; NPTEL Programming in Java (Elite+Gold, 91/100); Kaggle AI Agents Intensive Course.}
-    \resumeItem{\textbf{Leadership:} Class Representative for a 120+ student cohort; seminar speaker on AI and Chandrayaan-3.}
+    \resumeItem{\textbf{Open Source:} 50+ PRs merged across Google (OSS-Fuzz), Microsoft, Apache (DataFusion), and Hedera (Hiero SDK).}
+    \resumeItem{\textbf{Certifications:} JPMorgan Chase \& Electronic Arts SWE Virtual Experience; NPTEL Java (Elite+Gold, 91/100); Kaggle AI Agents.}
+    \resumeItem{\textbf{Leadership:} Class Representative (120+ cohort); seminar speaker on AI and Chandrayaan-3.}
   \end{itemize}
 
 \end{document}
