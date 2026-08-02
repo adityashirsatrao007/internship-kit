@@ -14,7 +14,7 @@ import argparse
 import csv
 import os
 import sys
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CSV_PATH = os.path.join(HERE, "applications.csv")
@@ -22,6 +22,10 @@ FIELDS = [
     "company", "role", "region", "resume_variant", "repos_shown",
     "date_applied", "status", "deadline", "next_action", "next_action_date", "notes",
 ]
+
+
+def _today():
+    return datetime.now().astimezone().date()
 
 
 def load():
@@ -43,7 +47,7 @@ def add(args):
     row = {
         "company": args.company, "role": args.role or "", "region": args.region or "",
         "resume_variant": args.resume or "", "repos_shown": args.repos or "",
-        "date_applied": args.date_applied or date.today().isoformat(),
+        "date_applied": args.date_applied or _today().isoformat(),
         "status": args.status or "to_apply", "deadline": args.deadline or "",
         "next_action": args.next_action or "", "next_action_date": args.next_action_date or "",
         "notes": args.notes or "",
@@ -58,9 +62,7 @@ def _match(row, status, region, company):
         return False
     if region and region.lower() not in row["region"].lower():
         return False
-    if company and company.lower() not in row["company"].lower():
-        return False
-    return True
+    return not (company and company.lower() not in row["company"].lower())
 
 
 def list_(args):
@@ -74,7 +76,7 @@ def list_(args):
 
 
 def due(args):
-    today = date.today()
+    today = _today()
     cutoff = today + timedelta(days=7)
     found = False
     for r in load():
