@@ -82,9 +82,46 @@ All resumes and cover letters exist as `.tex` files ready to compile on **Overle
 
 ## GitHub repos by role
 
-> **Start here:** open [`github-projects/master-hub.md`](github-projects/master-hub.md) — it
-> maps every target **company** and **role** to the exact **GitHub repos** and **resume file**
-> to use, with live links. Every linked repo is public, CI-green, and resume-referenced.
+> Click straight through to any repo. Full mapping (companies × roles × repos × resumes) is in
+> [`github-projects/master-hub.md`](github-projects/master-hub.md). Every repo below is public,
+> CI-green, and resume-referenced.
+
+**Software Engineering / FAANG**
+[order-matching-engine](https://github.com/adityashirsatrao007/order-matching-engine) ·
+[hackathon-project-1](https://github.com/adityashirsatrao007/hackathon-project-1) ·
+[hackathon-project-3](https://github.com/adityashirsatrao007/hackathon-project-3)
+
+**Goldman Sachs / JPMorgan**
+[order-matching-engine](https://github.com/adityashirsatrao007/order-matching-engine) ·
+[hackathon-project-1](https://github.com/adityashirsatrao007/hackathon-project-1) ·
+[hackathon-project-3](https://github.com/adityashirsatrao007/hackathon-project-3)
+
+**ML / AI Engineer**
+[rag-knowledge-assistant](https://github.com/adityashirsatrao007/rag-knowledge-assistant) ·
+[bert-multilingual-sentiment](https://github.com/adityashirsatrao007/bert-multilingual-sentiment) ·
+[ai-nids-framework](https://github.com/adityashirsatrao007/ai-nids-framework) ·
+[hackathon-project-3](https://github.com/adityashirsatrao007/hackathon-project-3)
+
+**Data Analyst / BI**
+[nyc-taxi-data-pipeline](https://github.com/adityashirsatrao007/nyc-taxi-data-pipeline) ·
+[real-time-clickstream](https://github.com/adityashirsatrao007/real-time-clickstream) ·
+[bank-marketing-ml-case-study](https://github.com/adityashirsatrao007/bank-marketing-ml-case-study)
+
+**Web / Frontend / Fullstack**
+[hackathon-project-1](https://github.com/adityashirsatrao007/hackathon-project-1) ·
+[hackathon-project-3](https://github.com/adityashirsatrao007/hackathon-project-3) ·
+[rag-knowledge-assistant](https://github.com/adityashirsatrao007/rag-knowledge-assistant)
+
+**Japan (Mercari / Rakuten / Sony / LY / HENNGE / Woven)**
+[hackathon-project-1](https://github.com/adityashirsatrao007/hackathon-project-1) ·
+[hackathon-project-2](https://github.com/adityashirsatrao007/hackathon-project-2) ·
+[hackathon-project-3](https://github.com/adityashirsatrao007/hackathon-project-3) ·
+[rag-knowledge-assistant](https://github.com/adityashirsatrao007/rag-knowledge-assistant)
+
+**Supporting**
+[production-cicd-template](https://github.com/adityashirsatrao007/production-cicd-template) ·
+[nihongo-n5](https://github.com/adityashirsatrao007/nihongo-n5) ·
+[ai-ds-starter](https://github.com/adityashirsatrao007/ai-ds-starter)
 
 ## Quick timeline
 
